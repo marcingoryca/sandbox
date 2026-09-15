@@ -11,6 +11,6 @@ $one = 2;
     <title>Document</title>
 </head>
 <body>
-    <script src="js/fetch.js"></script>
+    <script src="fetch.js"></script>
 </body>
 </html>

@@ -10,10 +10,10 @@ function loadScript(src, callback)
     document.body.append(script);
 }
 
-loadScript('js/code.js', script => {
+loadScript('fetch2.js', script => {
     hello();
 
-    loadScript('js/code.js', function () {
+    loadScript('fetch2.js', function () {
         smile();
     });
 });
