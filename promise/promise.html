@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promise</title>
+    <title>Promise #1</title>
 </head>
 <body>
     <script>
@@ -12,7 +12,8 @@
             setTimeout(() => resolve("Promise done!"), 1000);
         });
 
-        function done() {
+        function done(result) {
+            alert(result);
             alert("done");
         }
 
