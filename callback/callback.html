@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    <script>
+    function callbackExample(callback) {
+        alert('Script is running!');
+        callback();
+    };
+
+    callbackExample(function() {
+        function run() {
+            alert('This is from callback!');
+        }
+
+        run();
+    });
+
+    callbackExample(anotherCallback);
+
+    function anotherCallback() {
+        alert("this is another callback!");
+    }
+    </script>
+</body>
+</html>
